@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum Token {
+public enum Token {
 
     case backIOSPrimary
     case backPrimary
