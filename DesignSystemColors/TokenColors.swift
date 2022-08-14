@@ -30,7 +30,7 @@ public enum Token {
     case colorGrayLight
     case colorWhite
 
-    var color: UIColor {
+    public var color: UIColor {
         UIColor { traitCollection in
             switch self {
             case .backIOSPrimary:
