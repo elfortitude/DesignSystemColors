@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		12D59F4028A93BB80043E2E0 /* DesignSystemColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D59F3F28A93BB80043E2E0 /* DesignSystemColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12D59F4728A93DF60043E2E0 /* TokenColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D59F4628A93DF60043E2E0 /* TokenColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12D59F3C28A93BB80043E2E0 /* DesignSystemColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystemColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D59F3F28A93BB80043E2E0 /* DesignSystemColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignSystemColors.h; sourceTree = "<group>"; };
+		12D59F4628A93DF60043E2E0 /* TokenColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				12D59F3F28A93BB80043E2E0 /* DesignSystemColors.h */,
+				12D59F4628A93DF60043E2E0 /* TokenColors.swift */,
 			);
 			path = DesignSystemColors;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					12D59F3B28A93BB80043E2E0 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D59F4728A93DF60043E2E0 /* TokenColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +191,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -243,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -258,6 +263,7 @@
 		12D59F4428A93BB80043E2E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -279,6 +285,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,6 +294,7 @@
 		12D59F4528A93BB80043E2E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
